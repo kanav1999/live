@@ -1,0 +1,31 @@
+buildscript {
+    ext.kotlin_version = '1.8.0' // Update Kotlin version to a more recent version.
+    repositories {
+        google()
+        mavenCentral()  // JCenter is deprecated, switch to mavenCentral
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0' // Use a Gradle plugin version compatible with Java 21
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral() // Use mavenCentral instead of jcenter as jcenter is deprecated
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

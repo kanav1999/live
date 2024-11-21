@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="17px" viewBox="0 0 19 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Group" transform="translate(1.000000, 1.000000)" stroke="#000000" stroke-width="2">
+            <line x1="7.29161" y1="3.125" x2="16.66661" y2="3.125" id="Path"></line>
+            <line x1="8.8817842e-16" y1="11.45836" x2="10.41671" y2="11.45836" id="Path"></line>
+            <circle id="Oval" transform="translate(3.125000, 3.125000) rotate(90.000000) translate(-3.125000, -3.125000) " cx="3.125" cy="3.125" r="3.125"></circle>
+            <circle id="Oval" transform="translate(13.541610, 11.458360) rotate(90.000000) translate(-13.541610, -11.458360) " cx="13.54161" cy="11.45836" r="3.125"></circle>
+        </g>
+    </g>
+</svg>
